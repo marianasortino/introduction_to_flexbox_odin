@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Cross-Axis (Vertical) Alignment</title>
+  </head>
+  <style>
+    .header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}
+  </style>
+  <body>
+    <div class='header-container'>
+      <div class='header'>
+        <div class='subscribe'>Subscribe &#9662;</div>
+        <div class='logo'><img src='/awesome-logo.svg'/></div>
+        <div class='social'><img src='/social-icons.svg'/></div>
+      </div>
+    </div>
+  </body>
+</html>

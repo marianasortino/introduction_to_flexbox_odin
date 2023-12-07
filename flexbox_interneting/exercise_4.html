@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>wrapping Flex Items</title>
+  </head>
+  <style>
+    .photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+  .first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+  </style>
+  <body>
+    <div class='photo-grid-container'>
+      <div class='photo-grid'>
+        <div class='photo-grid-item first-item'>
+          <img src='/one.svg'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img src='/two.svg'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img src='/three.svg'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img src='/four.svg'/>
+        </div>
+        <div class='photo-grid-item last-item'>
+          <img src='/five.svg'/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
